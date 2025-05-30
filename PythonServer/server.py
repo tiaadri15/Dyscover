@@ -34,7 +34,7 @@ def proses_audio(file_path):
 def start_server():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.bind((HOST, PORT))
-        s.listen(1)
+        s.listen(5)
         print(f"Menunggu koneksi di {HOST}:{PORT}...")
         conn, addr = s.accept()
         print(f"Koneksi dari: {addr}")

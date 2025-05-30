@@ -4,5 +4,26 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/HomeScene.unity
+    guid: 146c8abdd4228564fb9c1c5973867f58
+  - enabled: 1
+    path: Assets/Scenes/MenuBelajarScene.unity
+    guid: ce44ff663ab852b4bb81885bb17719fe
+  - enabled: 1
+    path: Assets/Scenes/belajarHurufB.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/DetectScene.unity
+    guid: fbd0903c21703024893907cea2df6fec
+  - enabled: 1
+    path: Assets/Scenes/belajarKata.unity
+    guid: e5dfeb2e2d210f5439e867d53ce530a7
+  - enabled: 1
+    path: Assets/Scenes/belajarTeks.unity
+    guid: eb48773b3c0d6954c819da6ecca496a5
+  - enabled: 1
+    path: Assets/Scenes/hasilBenar.unity
+    guid: 29db6e599eedbd04f86f61b512a849fa
   m_configObjects: {}
