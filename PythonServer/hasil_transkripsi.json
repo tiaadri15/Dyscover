@@ -1,9 +1,9 @@
 {
-    "teks": "ibu memasak nasi uduk",
-    "durasi": 3.259999990463257,
-    "benar": 4,
-    "salah": 0,
-    "panjang": 4,
-    "akurasi": 100,
+    "teks": "halo nama saya nia ibu memasak nasi",
+    "durasi": 4.099999904632568,
+    "benar": 0,
+    "salah": 7,
+    "panjang": 7,
+    "akurasi": 0,
     "kecepatan": 0
 }

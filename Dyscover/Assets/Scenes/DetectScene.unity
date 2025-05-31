@@ -486,6 +486,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b0120358b2f5734d9d8f763cd35e434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &301623962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1954197783050703252, guid: 51785a45c3e0beb4b8a072a20e3875db, type: 3}
+  m_PrefabInstance: {fileID: 301623960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2834ee396726cd54c90e4c76f27888ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &460788483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,7 +1084,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1341194599}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 301623962}
+        m_TargetAssemblyTypeName: TCPClientSender, Assembly-CSharp
+        m_MethodName: kembali
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1341194599
 MonoBehaviour:
   m_ObjectHideFlags: 0

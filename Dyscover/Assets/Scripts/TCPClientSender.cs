@@ -80,6 +80,8 @@ public class TCPClientSender : MonoBehaviour
 
     private void Start()
     {
+        tcpPredict.enabled = false;
+        
         string jsonPath = Path.Combine(Application.persistentDataPath, "hasil_transkripsi.json");
 
         if (File.Exists(jsonPath))
@@ -87,6 +89,11 @@ public class TCPClientSender : MonoBehaviour
             Debug.Log("File hasil_transkripsi.json ditemukan. Menghapus...");
             File.Delete(jsonPath);
         }
+    }
+
+    public void kembali()
+    {
+        SceneManager.LoadScene("HomeScene");
     }
     public void SendWavFile(string path)
     {
@@ -143,9 +150,16 @@ public class TCPClientSender : MonoBehaviour
                     Debug.Log("JSON disimpan ke: " + localJsonPath);
                     tcpPredict.enabled = true;
 
-                    //tcpPredict.enabled = false;
-
                     SceneManager.LoadScene("hasilBenar");
+
+                    if (SceneManager.GetActiveScene().name == "DetectScene")
+                    {
+                        SceneManager.LoadScene("PredictScene");
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("hasilBenar");
+                    }
                 }
             }
         }
